@@ -39,7 +39,7 @@ class Header extends Component {
   render() {
     return (
       <>
-      <nav className=   {(this.state.data !== undefined  &&  this.state.data.length > 0 || this.state.error )?  'wrapper_nav top'  :'wrapper_nav'}>
+      <nav className=   {(this.state.data !== undefined ) && (this.state.data.length > 0 || this.state.error )?  'wrapper_nav top'  :'wrapper_nav'}>
           <div className="bowl_Serach">
             <form className='form_Search'>
               <div className='bowl_svg_Search'>
