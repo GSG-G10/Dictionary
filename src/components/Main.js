@@ -6,7 +6,7 @@ function Main(props) {
     <main>
       <div className="bowl_main">
         <ul>
-        {cardsData ? cardsData.map((ele,i) => <Card key={i}word={ele.word} meanings={ele.meanings} />)
+        {cardsData.length>0 ? cardsData.map((ele,i) => <Card key={i}word={ele.word} meanings={ele.meanings} />)
           : ""}
           </ul>
       </div>
@@ -16,4 +16,3 @@ function Main(props) {
 
 export default Main;
 
-   // return console.log( `key=${i}, word=${ele.word} ,meanings=${ele.meanings}`)

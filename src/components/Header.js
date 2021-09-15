@@ -7,7 +7,7 @@ class Header extends Component {
     super(props);
     this.state = {
       query: "",
-      data:[]
+      data:[],
     };
   }
   onSearchSub = (e) => {
@@ -16,6 +16,7 @@ class Header extends Component {
     .then(data=>{
       this.setState({data:data})
     })
+   
     
   };
 
@@ -39,7 +40,7 @@ class Header extends Component {
             </form>
           </div>
         </nav>
-        <Main cardsData={this.state.data}/>
+        <Main cardsData={this.state.data?this.state.data:[]}/>
       </>
     );
   }

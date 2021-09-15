@@ -37,47 +37,38 @@
   }
 }
 
-
-
-main{
+main {
   display: flex;
-background: salmon;
+  background: salmon;
   width: 100%;
-  height: calc(100vh - 55px);
 }
 
-
-nav{
-height: 55px;
-display: flex;
-background: rgb(79, 204, 68);
-justify-content: center;
-align-items: center;
+nav {
+  height: 55px;
+  display: flex;
+  background: rgb(255, 95, 116);
+  justify-content: center;
+  align-items: center;
 }
 
-
-
-.bowl_Serach{
+.bowl_Serach {
   display: flex;
 }
 
-
-.bowl_Serach svg{
+.bowl_Serach svg {
   width: 30px;
   cursor: pointer;
   height: 30px;
 }
 
-
-.bowl_Serach input{
+.bowl_Serach input {
   padding: 10px;
 }
 
-
-.btn_sub_serch_hid{
+.btn_sub_serch_hid {
   display: none;
 }
 
-
-
-
+.part-speech {
+  color: rgb(3, 70, 70);
+}
