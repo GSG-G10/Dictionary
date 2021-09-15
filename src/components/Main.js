@@ -1,15 +1,14 @@
-import React, { Component } from 'react'
+import React from "react";
 
-export class Main extends Component {
-    render() {
-        return (
-            <main>
-                <div className="bowl_main">
-                main is
-                </div>
-          </main>
-        )
-    }
+ function Main (props) {
+
+console.log(props)
+
+    return (
+      <main>
+        <div className="bowl_main">{props.cardData}</div>
+      </main>
+    );
 }
 
-export default Main
+export default Main;
