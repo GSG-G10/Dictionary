@@ -21,16 +21,14 @@ class Header extends Component {
       .then(data=>{
         this.setState({load: false})
     if(data === undefined){
-          console.log('data is un');
         this.setState({error:true})
       }else{
-          this.setState({data:''})
+          // this.setState({data:''})
         this.setState({error: false})
         this.setState({data:data})
         }
       }).catch(err=>{
         this.setState({error:true})
-        console.log('error from catch api')
       })
   };
 
@@ -41,7 +39,7 @@ class Header extends Component {
   render() {
     return (
       <>
-      <nav className=   {this.state.data !== undefined  &&  this.state.data.length > 0 || this.state.error ?  'wrapper_nav top'  :'wrapper_nav'}>
+      <nav className=   {(this.state.data !== undefined  &&  this.state.data.length > 0 || this.state.error )?  'wrapper_nav top'  :'wrapper_nav'}>
           <div className="bowl_Serach">
             <form className='form_Search'>
               <div className='bowl_svg_Search'>
