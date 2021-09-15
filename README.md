@@ -1,5 +1,5 @@
 # Dictionary
-## Live demo :tv:  [link](https://youthful-lewin-d9183f.netlify.app/ )
+## Live demo :tv:  [link](https://compassionate-lewin-b4a0f6.netlify.app/ )
 
 -------------------------
 ## Purpose: :bulb:
