@@ -1,3 +1,4 @@
+
 const getData = searchValue => {
     return fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${searchValue}`)
       .then(res=>res.json())
@@ -6,3 +7,4 @@ const getData = searchValue => {
       });
   };
   export default getData
+  
