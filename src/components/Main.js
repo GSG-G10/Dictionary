@@ -2,7 +2,6 @@ import React from "react";
 import Card from "./Card";
 function Main(props) {
   const { cardsData } = props;
-  console.log('cardsData',cardsData)
   return (
     <main>
       <div className="bowl_main">
@@ -17,4 +16,3 @@ function Main(props) {
 
 export default Main;
 
-   // return console.log( `key=${i}, word=${ele.word} ,meanings=${ele.meanings}`)
