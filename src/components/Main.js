@@ -1,15 +1,19 @@
-import React, { Component } from 'react'
-
-export class Main extends Component {
-    render() {
-        return (
-            <main>
-                <div className="bowl_main">
-                main is
-                </div>
-          </main>
-        )
-    }
+import React from "react";
+import Card from "./Card";
+function Main(props) {
+  const { cardsData } = props;
+  return (
+    <main>
+      <div className="bowl_main">
+        <ul>
+        {cardsData ? cardsData.map((ele,i) => <Card cardKey={i}word={ele.word} meanings={ele.meanings} />)
+          : ""}
+          </ul>
+      </div>
+    </main>
+  );
 }
 
-export default Main
+export default Main;
+
+   // return console.log( `key=${i}, word=${ele.word} ,meanings=${ele.meanings}`)
