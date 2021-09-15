@@ -45,7 +45,7 @@ class Header extends Component {
               <div className='bowl_svg_Search'>
                 <Search onClick={this.onSearchSub}></Search>
               </div>
-                <input type="text" onChange={this.getQuery}  placeholder='search about ant vword Aa..'/>
+                <input type="text" onChange={this.getQuery}  placeholder='search about any word ..'/>
                 <button
                   className="btn_sub_serch_hid"
                   type="submit"
